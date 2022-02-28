@@ -1,8 +1,13 @@
 package com.lolozianas.missingletters
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
+
+/**
+ * [MainActivity] sets the content view activity_main, a fragment container that contains
+ * startFragment
+ * */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
