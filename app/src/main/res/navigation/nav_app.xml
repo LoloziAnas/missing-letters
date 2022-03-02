@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.lolozianas.missingletters.ui.game.StartFragment"
+        android:label="StartFragment" >
+        <action
+            android:id="@+id/action_startFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_frameFragment"
+            app:destination="@id/frameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/frameFragment"
+        android:name="com.lolozianas.missingletters.ui.game.FrameFragment"
+        android:label="FrameFragment" />
+    <fragment
+        android:id="@+id/scoreFragment"
+        android:name="com.lolozianas.missingletters.ui.game.ScoreFragment"
+        android:label="ScoreFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.lolozianas.missingletters.ui.game.SettingsFragment"
+        android:label="SettingsFragment" />
+</navigation>
