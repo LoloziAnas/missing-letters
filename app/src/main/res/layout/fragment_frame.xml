@@ -5,6 +5,13 @@
 
     <data>
 
+        <variable
+            name="frameFragment"
+            type="com.lolozianas.missingletters.ui.game.FrameFragment" />
+
+        <variable
+            name="gameViewModel"
+            type="com.lolozianas.missingletters.data.GameViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,6 +38,7 @@
             android:layout_marginTop="90dp"
             android:textColor="@color/white"
             android:textSize="43sp"
+            android:text="@{gameViewModel.word}"
             android:textStyle="bold|italic"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

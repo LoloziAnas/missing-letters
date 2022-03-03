@@ -8,6 +8,10 @@
         <variable
             name="scoreFragment"
             type="com.lolozianas.missingletters.ui.game.StartFragment" />
+
+        <variable
+            name="gameViewModel"
+            type="com.lolozianas.missingletters.data.GameViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -34,6 +38,7 @@
             android:layout_marginTop="15dp"
             android:textColor="@color/white"
             android:textSize="55sp"
+            android:text="@{gameViewModel.score}"
             android:textStyle="italic|bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

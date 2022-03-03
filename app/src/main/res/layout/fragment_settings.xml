@@ -23,6 +23,7 @@
             android:layout_marginTop="36dp"
             android:background="@drawable/ic_back"
             android:contentDescription="@string/app_name"
+            android:onClick="@{()->settingsFragment.navigateToStart()}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
